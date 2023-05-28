@@ -1,20 +1,73 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>SkeletonAPP</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-text-center size-big">
+    <h1 id="title_home" class="size-big">Bienvenido!</h1>
+    <h4 class="ion-text-start size-small" id="txt_usuario">Usuario: Juan</h4>
+    <h2 class="size-medium">Informacion Adicional</h2>
+    <div>
+      <form action="" method="post">
+        <div class="ion-text-start" id="txt_usuario">
+          <ion-row>
+            <ion-col>
+              <h4 class="size-small">Nombre</h4>
+            </ion-col>
+            <ion-col>
+              <ion-input placeholder="Ingrese Nombre" class="size-small"></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <h4 class="size-small">Apellido</h4>
+            </ion-col>
+            <ion-col>
+              <ion-input class="size-small" placeholder="Ingrese Apellido"></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <h4 class="size-small">Nivel Educacion</h4>
+            </ion-col>
+            <ion-col>
+              <ion-list>
+                <ion-item>
+                  <ion-select>
+                    <ion-select-option value="basica">Basica</ion-select-option>
+                    <ion-select-option value="media">Media</ion-select-option>
+                    <ion-select-option value="superior">Superior</ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <h4 class="size-small">Fecha Nacimiento</h4>
+            </ion-col>
+            <ion-col>
+              <ion-input class="size-small" type="date"></ion-input>
+            </ion-col>
+          </ion-row>
+          <div>
+            <ion-row>
+              <ion-col>
+                <ion-button id="button-home" expand="block" size="large">Limpiar</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button id="button-home" expand="block" size="large">Mostrar</ion-button>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
 </ion-content>
+
+<ion-footer>
+  <p class="size-small">App desarrollada por Daniel Barriga Molina</p>
+</ion-footer>
